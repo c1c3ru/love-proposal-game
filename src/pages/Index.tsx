@@ -25,8 +25,8 @@ const Index = () => {
     setShowCelebration(true);
     setAccepted(true);
     toast({
-      title: "Que maravilha!",
-      description: "Você fez a escolha certa! ❤️",
+      title: "Eu te amo muito!!!",
+      description: "Eu sem querer me apaixonei, não lutei, não evitei. Esse amor natural nasceu em mim, quero você do jeitinho que você é.Ainda bem que agora encontrei você. Eu realmente não sei o que eu fiz pra merecer você ❤️",
       duration: 5000,
     });
   };
