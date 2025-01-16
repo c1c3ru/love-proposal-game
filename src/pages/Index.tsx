@@ -48,7 +48,7 @@ const Index = () => {
           Você quer casar comigo?
         </h1>
 
-        <div className="flex gap-6 items-center justify-center flex-wrap">
+        <div className="flex gap-6 items-center justify-center">
           {!accepted && (
             <>
               <ProposalButton
@@ -59,11 +59,12 @@ const Index = () => {
               <ProposalButton
                 variant="no"
                 onClick={moveNoButton}
+                onMouseEnter={moveNoButton}
                 style={{
-                  position: 'absolute',
+                  position: noButtonPosition.top ? 'absolute' : 'relative',
                   top: `${noButtonPosition.top}px`,
                   left: `${noButtonPosition.left}px`,
-                  transform: noButtonPosition.top ? 'none' : 'none',
+                  transition: 'all 0.3s ease-in-out',
                 }}
                 className="transition-all duration-300"
               />

@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 interface ProposalButtonProps {
   variant: 'yes' | 'no';
   onClick: () => void;
+  onMouseEnter?: () => void;
   style?: React.CSSProperties;
   className?: string;
 }
@@ -12,6 +13,7 @@ interface ProposalButtonProps {
 const ProposalButton: React.FC<ProposalButtonProps> = ({
   variant,
   onClick,
+  onMouseEnter,
   style,
   className
 }) => {
@@ -26,6 +28,7 @@ const ProposalButton: React.FC<ProposalButtonProps> = ({
       )}
       style={style}
       onClick={onClick}
+      onMouseEnter={onMouseEnter}
     >
       {variant === 'yes' ? 'Sim' : 'Não'}
     </Button>
